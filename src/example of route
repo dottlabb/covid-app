@@ -1,0 +1,74 @@
+[Thursday 14:31] Katie Lee
+    
+
+importReactfrom'react';
+import { Switch ,Route} from'react-router-dom';
+import Landingpage from'./landingpage';
+import Aboutme from'./aboutme';
+import Contact from'./contact';
+// import Projects from './projects';
+ import Skills from'./skills';
+ 
+constMain=()=>(
+<Switch>
+<Routeexactpath="/"component ={Landingpage}/>
+<Routepath="/aboutme"component ={Aboutme}/>
+<Routepath="/contact"component ={Contact}/>
+<Routepath="/skills"component ={Skills}/>
+{/* <Route path="/projects" component ={Projects} /> */}
+
+</Switch>
+)
+ 
+exportdefaultMain;
+
+ 
+
+
+​[Thursday 14:32] Katie Lee
+    APP.JS
+​[Thursday 14:32] Katie Lee
+    
+
+importReact,{Component} from'react';
+import'./App.css';
+import{Layout,Header,Navigation,Drawer,Content} from'react-mdl';
+importMainfrom'./components/main';
+import {Link} from'react-router-dom';
+ 
+classAppextendsComponent {
+render() {
+return (
+<divclassName='demo-big-content'>
+<Layout>
+<HeaderclassName="Header-color"title={<Linkstyle={{textDecoration:'none', color:'white'}}to="/">Katie's profolio</Link>}>
+<Navigation>
+<Linkto="/">Home</Link>
+
+<Link to="./aboutme">About</Link>
+<Linkto="./skills">Skills</Link>
+{/* <Link to="./projects">Projects</Link> */}
+<Linkto="./contact">Contact</Link>
+</Navigation>
+</Header>
+<Drawertitle={"Menu"}>
+<Navigation>
+<Linkto="/">Home</Link>
+
+<Linkto="./aboutme">About</Link>
+<Linkto="./skills">Skills</Link>
+{/* <Link to="./projects">Projects</Link> */}
+<Linkto="./contact">Contact</Link>
+</Navigation>
+</Drawer>
+<Content>
+<divclassName='page-content'/>
+<Main/>
+</Content>
+</Layout>
+</div>
+ );
+ }
+}
+exportdefaultApp;
+

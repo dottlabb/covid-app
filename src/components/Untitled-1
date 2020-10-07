@@ -1,0 +1,13 @@
+
+
+
+
+
+
+Routing:
+    Route from sign up to dashboard
+    Extract the ID from the route, 
+        to populate the table
+        to allow for the diary entry post to work
+            location ID lookup
+

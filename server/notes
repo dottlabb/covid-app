@@ -1,0 +1,55 @@
+Diary
+{
+    "UserID": "3",
+    "LocationID": "2",
+    "orgname":"fhot dawgs",
+    "activity":"eatinghotdawgs",
+   "city":"melbs",
+    "suburb": "windsore",
+    "timeid":"03:41",
+    "dateid":"29/09/2020"
+
+}
+
+Locations
+{
+  "firstname": "rry",
+    "lastname": "oter",
+    "orgname":"fhot dawgs",
+    "address":"3 street street",
+    "suburb": "windsore",
+    "postcode":"3181",
+    "phone":"349673589",
+    "email": "michaexl@gmail.com",
+    "authorization":"yes"
+}
+Users
+{
+     "firstname": "rry",
+    "lastname": "oter",
+    "contactvia":"email",
+    "password":"yamum",
+    "suburb": "windsore",
+    "postcode":"3181",
+    "phone":"349673589",
+    "email": "michaxl@gmail.com"
+    
+}
+
+
+
+{/* <FormControlLabel */}
+                //     control={
+                //       <Checkbox value="ContactByEmail" color="primary" />
+                //     }
+                //     label="CONTACT BY EMAIL."
+                //   />
+                // </Grid>
+                // <Grid item xs={6}>
+                //   <FormControlLabel
+                //     control={
+                //       <Checkbox value="ContactByPhone" color="primary" />
+                //     }
+                //     label=" CONTACT BY PHONE."
+                //   />
+                // </Grid>
